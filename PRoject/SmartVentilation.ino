@@ -20,7 +20,7 @@
 // LED Alert
 #define ALERT_LED 23
 
-// WiFi Credentials - APNA WIFI ID PASSWORD DALNA YAHAN
+// WiFi Credentials - YAHAN APNA WIFI DALNA
 const char* ssid = "Aditya's Galaxy F23 5G";
 const char* password = "12345678";
 
