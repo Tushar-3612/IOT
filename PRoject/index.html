@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ventilation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>🌬️ Smart Ventilation System</h1>
+            <div class="status-indicator">
+                <span id="connection-status">Connecting...</span>
+                <div id="status-dot" class="dot"></div>
+            </div>
+        </header>
+
+        <div class="controls">
+            <button id="refresh-btn">🔄 Refresh Data</button>
+            <button id="auto-mode">🔄 Auto Mode</button>
+            <div class="ip-input">
+                <label>ESP32 IP Address:</label>
+                <input type="text" id="esp32-ip" placeholder="192.168.1.100">
+                <button id="connect-btn">🔗 Connect</button>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <!-- Temperature Card -->
+            <div class="card temperature">
+                <div class="card-header">
+                    <h3>🌡️ Temperature</h3>
+                    <span class="threshold">Threshold: 30°C</span>
+                </div>
+                <div class="card-value">
+                    <span id="temp-value">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="card-status" id="temp-status">--</div>
+            </div>
+
+            <!-- Humidity Card -->
+            <div class="card humidity">
+                <div class="card-header">
+                    <h3>💧 Humidity</h3>
+                    <span class="threshold">Threshold: 70%</span>
+                </div>
+                <div class="card-value">
+                    <span id="hum-value">--</span>
+                    <span class="unit">%</span>
+                </div>
+                <div class="card-status" id="hum-status">--</div>
+            </div>
+
+            <!-- Air Quality Cards -->
+            <div class="card air-quality mq135">
+                <div class="card-header">
+                    <h3>🌫️ MQ135 (Air Quality)</h3>
+                    <span class="threshold">High: 500</span>
+                </div>
+                <div class="card-value">
+                    <span id="mq135-value">--</span>
+                </div>
+                <div class="card-status" id="mq135-status">--</div>
+            </div>
+
+            <div class="card air-quality mq6">
+                <div class="card-header">
+                    <h3>🔥 MQ6 (Gas)</h3>
+                    <span class="threshold">High: 500</span>
+                </div>
+                <div class="card-value">
+                    <span id="mq6-value">--</span>
+                </div>
+                <div class="card-status" id="mq6-status">--</div>
+            </div>
+
+            <!-- Motion Detection -->
+            <div class="card motion">
+                <div class="card-header">
+                    <h3>👤 Motion Detection</h3>
+                </div>
+                <div class="card-value">
+                    <span id="motion-value">--</span>
+                </div>
+                <div class="card-status" id="motion-status">No motion</div>
+            </div>
+
+            <!-- Fan Status -->
+            <div class="card fan">
+                <div class="card-header">
+                    <h3>🌀 Fan Status</h3>
+                </div>
+                <div class="card-value">
+                    <span id="fan-speed-value">--</span>
+                    <span class="unit">/255</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="fan-progress"></div>
+                </div>
+                <div class="card-status" id="fan-status">Auto Mode</div>
+            </div>
+        </div>
+
+        <!-- Manual Control Section -->
+        <div class="manual-control-panel">
+            <h3>🎛️ Manual Control</h3>
+            <div class="control-group">
+                <label>Fan Speed: <span id="fan-display">0</span>/255</label>
+                <input type="range" id="fan-slider" min="0" max="255" value="0">
+                <button id="set-fan">Set Fan Speed</button>
+                <button id="reset-mode">Reset to Auto</button>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts">
+            <h3>📊 Live Data Chart</h3>
+            <div class="chart-container">
+                <canvas id="sensorChart"></canvas>
+            </div>
+        </div>
+
+        <!-- System Info -->
+        <div class="info">
+            <h3>ℹ️ System Information</h3>
+            <div id="system-info">Waiting for data...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
