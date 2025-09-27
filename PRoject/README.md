@@ -49,4 +49,7 @@ It checks **temperature, humidity, and air quality** → then controls fans/vent
 - AI predictions for air quality  
 - Solar powered system  
 
+This is before implementation 
+<img width="1915" height="1030" alt="Screenshot 2025-09-27 123159" src="https://github.com/user-attachments/assets/d4a02590-e475-4332-b39a-d280e131aac1" />
+
 
