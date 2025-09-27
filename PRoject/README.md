@@ -9,8 +9,9 @@ PRoject/ Like that way and write the name in vscode
 
 │── README.md        # project overview
 
-│── docs/
-│    └── README.md   # theory notes
+│── docs/│   
+   
+   └── README.md   # theory notes
 
 
 ---
