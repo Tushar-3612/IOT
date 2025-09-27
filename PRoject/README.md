@@ -1,11 +1,19 @@
-PRoject/
+# 📂 Project Structure
+
+
 │── SmartVentilation.ino      # Arduino/ESP32 IoT code
-│── index.html                # Web dashboard (UI)
+
+|── index.html                # Web dashboard (UI)
+
 │── script.js                 # JavaScript for live data
+
 │── style.css                 # Styling for dashboard
+
 │── README.md                 # Project overview
+
 │── docs/                     # Documentation folder
-│    └── README.md            # Theory notes (with images)
+   
+   │    └── README.md            # Theory notes (with images)
 
 
 
