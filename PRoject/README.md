@@ -1,9 +1,14 @@
 PRoject/ Like that way and write the name in vscode 
 │── SmartVentilation.ino
+
 │── index.html
+
 │── script.js
+
 │── style.css
+
 │── README.md        # project overview
+
 │── docs/
 │    └── README.md   # theory notes
 
