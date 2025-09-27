@@ -59,12 +59,21 @@ It monitors **temperature, humidity, and air quality** in real-time, and control
 ## 📸 Project Snapshots
 
 ### 🔹 Before Connection (ESP32 WiFi not yet implemented)
-<img width="800" alt="Before ESP32 connection" src="https://github.com/user-attachments/assets/d4a02590-e475-4332-b39a-d280e131aac1" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d4a02590-e475-4332-b39a-d280e131aac1" 
+       alt="Before ESP32 connection"
+       width="700" height="400">
+</p>
 
 ---
 
 ### 🔹 After Connection (ESP32 + WiFi working)
-![After Connection](https://github.com/user-attachments/assets/8ef734c6-eca1-42a1-8ab0-84d7c8d5005f)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8ef734c6-eca1-42a1-8ab0-84d7c8d5005f" 
+       alt="After ESP32 connection"
+       width="400" height="500">
+</p>
+
 
 ---
 
