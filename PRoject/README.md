@@ -1,17 +1,12 @@
-PRoject/ Like that way and write the name in vscode 
-│── SmartVentilation.ino
+PRoject/
+│── SmartVentilation.ino      # Arduino/ESP32 IoT code
+│── index.html                # Web dashboard (UI)
+│── script.js                 # JavaScript for live data
+│── style.css                 # Styling for dashboard
+│── README.md                 # Project overview
+│── docs/                     # Documentation folder
+│    └── README.md            # Theory notes (with images)
 
-│── index.html
-
-│── script.js
-
-│── style.css
-
-│── README.md        # project overview
-
-│── docs/│   
-   
-   └── README.md   # theory notes
 
 
 # 📖 IoT Smart Ventilation – Theory Notes
